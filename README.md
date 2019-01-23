@@ -1,3 +1,3 @@
-# scala-template
+# cloud
 
-This is an empty scala project template.
+Proof of concept code that interfaces with cloud components.

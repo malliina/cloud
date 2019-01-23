@@ -14,7 +14,7 @@ import scala.concurrent.{Await, Future, Promise}
 class PubSubTests extends FunSuite {
   val projectId = "random-226820"
 
-  test("PubSub using Akka Streams") {
+  ignore("PubSub using Akka Streams") {
     implicit val as = ActorSystem("test")
     implicit val mat = ActorMaterializer()
 
@@ -38,7 +38,7 @@ class PubSubTests extends FunSuite {
     }
   }
 
-  test("PubSub") {
+  ignore("PubSub") {
     PubSub.using(PubSub(projectId)) { client =>
       val testTopic = PubSubTopic.random()
       val _ = client.createTopic(testTopic)
